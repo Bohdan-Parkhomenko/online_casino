@@ -1,0 +1,23 @@
+main {
+    padding: 50px;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    background-image: url('Casino/CasinoComponent/components/HeaderMenu/assets/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media  screen and (max-width: 1260px){
+    body{
+        background-size: revert;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu{
+        position: relative;
+    }
+}

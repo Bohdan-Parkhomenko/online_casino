@@ -1,0 +1,145 @@
+.burger-btn {
+    width: 48px;
+    height: 48px;
+    margin-left: 48px;
+    cursor: pointer;
+    background-image: url('assets/burgerBtn.png');
+    background-size: contain;
+}
+
+nav {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.ul-pages {
+    margin-left: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: contain;
+}
+
+.ul-pages li {
+    margin-right: 32px;
+    display: flex;
+}
+
+.ul-pages .rectangle {
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #09FBF9;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.ul-pages li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Monda', serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 2px;
+
+    position: relative;
+}
+
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 139px;
+    height: 39px;
+    background-image: url('assets/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-buttons-sing {
+    position: absolute;
+    right: 0;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px; /* Добавьте отступ между кнопками */
+    list-style: none;
+
+    padding-right: 49px;
+}
+
+
+.list-buttons-sing li {
+    margin-right: 10px; /* Добавьте отступ между кнопками */
+}
+
+.list-buttons-sing li:last-child {
+    margin-right: 0; /* Уберите отступ у последней кнопки */
+}
+
+
+
+
+@media screen and (max-width: 1260px) {
+    .ul-pages {
+        display: none;
+    }
+
+    .list-buttons-sing {
+        padding-right: 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        height: 53px;
+    }
+
+    .burger-btn {
+        position: static;
+        width: 40px;
+        height: 40px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .logo {
+        position: static;
+        transform: translateX(0);
+    }
+
+    .list-buttons-sing {
+        display: flex;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin-right: 26px;
+    }
+
+    .li-in .in {
+        display: none;
+    }
+
+    .li-in {
+        display: none;
+        margin: 0;
+    }
+
+}
+
+
+
+

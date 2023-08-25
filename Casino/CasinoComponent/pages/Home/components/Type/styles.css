@@ -1,0 +1,49 @@
+.filter-container {
+    width: 100%;
+    min-height: 79px;
+    left: 0;
+    top: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    background: #13152f;
+}
+
+.filter-container .filter-item {
+    margin-right: 12px;
+    margin-left: 12px;
+    border: none;
+    color: white;
+}
+
+.filter-container .type-on {
+    background: white;
+}
+
+.filter-container .type-on span {
+    color:  #0F1029;
+}
+
+.filter-container .filter-item span {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.filter-container .type-on span {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1250px){
+    .filter-container {
+        justify-content: flex-start;
+    }
+}

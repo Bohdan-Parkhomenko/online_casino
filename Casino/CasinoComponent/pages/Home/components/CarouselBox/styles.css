@@ -1,0 +1,184 @@
+.carousel .slider-wrapper {
+    /*height: 50%;*/
+}
+
+.carousel .slide {
+    text-align: left;
+}
+
+.container {
+    position: relative;
+}
+
+.image-container {
+    
+    position: relative;
+    overflow: hidden; /* Щоб забезпечити видимість повного зображення */
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 108px;
+    color: #fff;
+}
+
+.overlay h1 {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.text-transform-uppercase {
+    text-transform: uppercase;
+}
+
+.overlay p {
+    margin-top: 32px;
+
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.overlay .coin {
+    margin: 0;
+    font-size: 34px;
+    color: #FFE600;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    max-height: 500px;
+    max-width: 1045px;
+    /*min-height: 350px;*/
+}
+
+.image-container .image {
+    float: right;
+    margin-right: 56px;
+
+}
+
+.overlay .buttons {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+}
+.overlay button {
+    margin-right: 24px;
+}
+
+.carousel .control-dots {
+    text-align: left;
+    left: 125px;
+}
+
+.arrows {
+    position: absolute;
+    bottom: 6.4px;
+    left: 108px;
+    display: flex;
+
+}
+
+.arrows .dot{
+    font-size: 1.5em;
+    color: #FFFFFF33;
+}
+
+.arrows .dot-on {
+    color: #FFFFFF;
+;
+}
+
+.arrows button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.carousel .control-dots {
+    width: auto;
+}
+
+.carousel{
+    position: relative;
+}
+
+
+@media screen and (max-width: 1260px) {
+    .image-container .image {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    .container {
+        padding-bottom: 90px;
+    }
+
+    .carousel .control-dots {
+
+    padding-left: 129px;
+
+    }
+
+    .image-container .image {
+        /*margin-right: ;*/
+        min-height: 212px;
+        min-width: 350px;
+        object-fit: cover;
+    }
+
+    .overlay{
+        left: 16px;
+    }
+
+    .overlay h1 {
+        font-size: 20px;
+        line-height: 33px;
+    }
+
+    .overlay p {
+        font-size: 12px;
+        line-height: 140%;
+    }
+
+    .coin {
+        display: inline;
+        margin-left: 5px;
+    }
+
+    .combined-text {
+        white-space: normal;
+    }
+
+    .carousel .control-dots {
+        text-align: center;
+        left: 0;
+    }
+
+    .arrows{
+
+    }
+}
+
+

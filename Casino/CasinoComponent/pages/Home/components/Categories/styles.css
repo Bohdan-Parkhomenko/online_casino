@@ -1,0 +1,54 @@
+.game-list-background .filter-item {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    margin-right: 16px;
+    cursor: pointer;
+    position: relative;
+}
+.game-list-background .filter-item::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: -9px;
+    width: 1px;
+    height: 10px;
+    background-color: white;
+    transform: translateY(+50%);
+
+}
+.game-list-background .filter-item:last-child::after {
+    display: none;
+}
+
+.categories-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 21px;
+}
+
+.game-list-background .vertical-line{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin-right: 16px;
+
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.categories-on {
+    color: #FFE600;
+}
+
+.categories-on span{
+    /*width: 28px;*/
+    /*height: 33px;*/
+
+    /*font-size: 20px;*/
+    /*line-height: 33px;*/
+
+
+    color: #FFE600;
+}

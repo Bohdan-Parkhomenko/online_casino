@@ -1,0 +1,184 @@
+.menu {
+    position: fixed;
+    width: 558px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.2s;
+    overflow: auto;
+    background: #010517;
+    z-index: 2;
+
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.manu-header {
+
+    font-size: 32px;
+    margin-left: 48px;
+    margin-top: 27px;
+    margin-bottom: 33px;
+
+    font-family: 'Monda', serif;
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: 52px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+menu ul li a {
+    color: white;
+    text-decoration: none;
+    margin-top: 11px;
+    margin-bottom: 13px;
+    margin-left: 28px;
+    font-family: 'Monda', serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px;
+
+}
+
+menu ul li {
+    margin-left: 48px;
+    margin-right: 48px;
+    display: flex;
+}
+
+menu ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.button-closed-menu {
+    margin-right: 42px;
+    margin-top: 15px;
+    width: 27px;
+    height: 27px;
+    background-image: url('Casino/CasinoComponent/components/HamburgerMenu/assets/menuClose.png');
+    background-size: contain;
+    cursor: pointer;
+
+}
+
+menu .rectangle {
+    background: rgba(0, 255, 255, 0.1);
+}
+
+menu .rectangle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateY(+57%);
+    width: 3px;
+    height: 28px;
+    background-color: #fff;
+}
+
+.photo-in-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 5px;
+
+}
+
+.social-network {
+    display: flex;
+    flex-direction: row;
+    margin-left: 49px;
+}
+
+.social-network li {
+    margin: 0 32px 0 0;
+}
+
+.list-button-language-change {
+    display: flex;
+    flex-direction: row;
+    margin-left: 49px;
+}
+
+.button-language-change {
+    padding: 4px 24px;
+    background: #FFFFFF;
+    border-radius: 36px;
+    border: none;
+    margin-right: 16px;
+}
+
+.button-language-change {
+    padding: 4px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 36px;
+    border: none;
+    margin-right: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.i18n-active {
+    color: black;
+    background: #ffffff;
+
+}
+
+.bottom-burger-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    max-height: 200px;
+    padding-bottom: 36px;
+
+}
+
+img {
+    max-width: 100%
+}
+
+@media screen and (max-width: 768px) {
+    .menu__content {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 1100px) {
+    .bottom-burger-menu {
+        position: relative;
+    }
+
+}
+
+
